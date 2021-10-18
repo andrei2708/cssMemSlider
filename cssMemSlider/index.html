@@ -5,61 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cssMemSlider</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="wrapper">
         <div class="container">
+            <input type="radio" name="slide" id="slide1" checked>
+            <input type="radio" name="slide" id="slide2">
+            <input type="radio" name="slide" id="slide3">
+            <input type="radio" name="slide" id="slide4">
+            <input type="radio" name="slide" id="slide5">
             <div class="slider">
-                <div class="slider-container">
-<!--                    <input type="radio" id="dot1" name="dots">-->
-                    <div class="slide">
-                        <img src="images/image1.png" alt="">
-                    </div>
-<!--                    <input type="radio" id="dot2" name="dots">-->
-                    <div class="slide">
-                        <img src="images/image2.jpg" alt="">
-                    </div>
-<!--                    <input type="radio" id="dot3" name="dots">-->
-                    <div class="slide">
-                        <img src="images/image3.jpg" alt="">
-                    </div>
-                    <input type="radio" id="dot4" name="dots">
-                    <div class="slide">
-                        <img src="images/image4.jpg" alt="">
-                    </div>
-                    <input type="radio" id="dot5" name="dots">
-                    <div class="slide">
-                        <img src="images/image5.png" alt="">
-                    </div>
+                <div class="slides slide1">
+                    <img src="images/Beth_Smith.png" alt="Beth_Smith">
+                </div>
+                <div class="slides slide2">
+                    <img src="images/Morti.jpg" alt="Morti">
+                </div>
+                <div class="slides slide3">
+                    <img src="images/Rick.jpg" alt="Rick">
+                </div>
+                <div class="slides slide4">
+                    <img src="images/Rick-Morti.jpg" alt="Rick-Morti">
+                </div>
+                <div class="slides slide5">
+                    <img src="images/Morti-Rick.jpg" alt="Morti-Rick">
                 </div>
             </div>
-            <main class="main">
+            <div class="controls">
+                <div class="dots">
+                    <label for="slide1" class="dot1">
+                        <span></span>
+                    </label>
+                    <label for="slide2" class="dot2">
+                        <span></span>
+                    </label>
+                    <label for="slide3" class="dot3">
+                        <span></span>
+                    </label>
+                    <label for="slide4" class="dot4">
+                        <span></span>
+                    </label>
+                    <label for="slide5" class="dot5">
+                        <span></span>
+                    </label>
+                </div>
                 <div class="meme-container">
-                    <p class="meme" tabindex="1">“I think you have to think ahead and live in the moment.”</p>
-                    <p class="meme" tabindex="2">"You know parents are just kids having kids."</p>
-                    <p class="meme" tabindex="3">"Listen, Morty, I hate to break it to you but what people call "love" is just a chemical reaction that compels animals to bread."</p>
-                    <p class="meme" tabindex="4">"The universe is so big, Morty, nothing in it matters."</p>
-                    <p class="meme" tabindex="5">"School is not a place for smart people"</p>
-                </div>
-                <div class="controls-container">
-                    <div class="dots">
-                        <label for="dot1" class="dot" id="controls-dot1"></label>
-                        <input type="radio" id="dot1" name="dots" class="controsl">
-                    </div>
-                    <div class="dots">
-                        <label for="dot2" class="dot" id="controls-dot2"></label>
-                        <input type="radio" id="dot2" name="dots" class="controsl">
-                    </div>
-                    <div class="dots">
-                        <label for="dot3" class="dot" id="controls-dot3"></label>
-                        <input type="radio" id="dot3" name="dots" class="controls">
-                    </div>
-<!--                    <div class="dots"><label for="dot4" class="dot" id="controls-dot4"></label></div>-->
-<!--                    <div class="dots"><label for="dot5" class="dot" id="controls-dot5"></label></div>-->
-                </div>
-            </main>
-        </div>
+                    <div class="meme">
+                        <p class="text meme-text1">"Нельзя заставить людей любить тебя. Нужно просто подождать, пока им надоест тебя ненавидеть." <br>
+                            <strong>БЕТТИ СМИТ</strong>
+                        </p>
+                        <p class="text meme-text2">"Знаешь, родители — это просто дети, у которых есть дети." <br>
+                            <strong>МОРТИ СМИТ</strong>
+                        </p>
+                        <p class="text meme-text3">"Знаешь, что я думаю о школе, Джери? Это пустая трата времени. Кучка людей бегает туда-сюда, натыкается друг на друга, какой-то чувак стоит впереди и говорит: «Два плюс два…», и люди сзади говорят: «Четыре». А потом звенит звонок, тебе дают пакет молока и бумажку, на которой написано, что ты можешь пойти в туалет или типа того. Я к тому, что это не место для умных людей, Джери." <br>
+                            <strong>РИК САНЧЕЗ</strong>
+                        </p>
+                        <p class="text meme-text4">"Послушай, Морти, я не хочу тебя расстраивать, но то, что люди называют любовью, — это просто химическая реакция, принуждающая животных размножаться. Поначалу это сильное чувство, Морти, но потом оно медленно слабеет, оставляя тебя в неудавшемся браке без копейки в кармане. Так было у меня, так будет у твоих родителей. Разорви порочный круг, Морти, будь выше этого, займись наукой." <br>
+                            <strong>РИК САНЧЕЗ</strong>
+                        </p>
+                        <p class="text meme-text5">"Никто не существует по определенной причине, никто ни к чему не привязан, все однажды умрут, пойдем посмотрим телик." <br>
+                            <strong>МОРТИ СМИТ</strong>
+                        </p>
+                    </div>            
+                 </div>
+            </div>   
+        </div>             
     </div>
 </body>
 </html>
